@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add an event listener for the button click
     button.addEventListener('click', function() {
-        // Get the paragraph element and update its content
-        const p = document.querySelectorAll('p')[1]; // The second <p> element
+        // Get the second paragraph element
+        const p = document.querySelectorAll('p')[1]; // Index 1 refers to the second <p>
+        
+        // Update the text content of the paragraph
         p.textContent = "The button was clicked! This is an updated message.";
-
+        
         // Change the color of the paragraph text to blue
         p.style.color = 'blue';
     });
